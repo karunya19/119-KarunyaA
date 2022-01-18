@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>AXIS BANK</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            background-color: whitesmoke;
+            font-size: 18px;
+        }
+        #tohide{
+            height: 300px;
+            width: 500px;
+            background-color: pink;
+        }
+        #tohide1{
+            height: 300px;
+            width: 500px;
+            background-color: pink;
+        }
+        #tohide2{
+            height: 300px;
+            width: 500px;
+            background-color: pink;
+        }
+    </style>
+    <script>
+
+
+        $(document).ready(function () {
+            $('#tohide').hide();
+
+
+            $('#showlogin').click(function () {
+                $('#tohide1').hide();
+                $('#tohide2').hide();
+                $('#tohide').show();
+                $('#p1').hide();
+
+            });
+
+        });
+
+        $(document).ready(function () {
+            $('#tohide1').hide();
+
+
+            $('#showlogin1').click(function () {
+                $('#tohide').hide();
+                $('#tohide2').hide();
+                $('#tohide1').show();
+                $('#p1').hide();
+            });
+
+        });
+
+        $(document).ready(function () {
+            $('#tohide2').hide();
+
+
+            $('#showlogin2').click(function () {
+                $('#tohide').hide();
+                $('#tohide1').hide();
+                $('#tohide2').show();
+                $('#p1').hide();
+            });
+
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h3>AXIS BANK | INTERNET BANKING</h3>
+        <br>
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="">WELCOME TO AXIS BANK</a></li>
+            <li>
+                <a id="showlogin">Login ID</a>
+                <div id="tohide">
+                    <!-- <center> -->
+
+                        <form>
+                            <div class="row mb-3">
+                                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="inputEmail3">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="inputPassword3">
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <button class="btn btn-primary" type="button">Login</button>
+                        </div>
+                    <!-- </center> -->
+                </div>
+            </li>
+
+
+
+            <li>
+                <a id="showlogin1">Debit Card No.</a>
+                <div id="tohide1">
+                    <!-- <center> -->
+
+                        <form>
+                            <div class="row mb-3">
+                                <label for="inputEmail3" class="col-sm-2 col-form-label">Card No.</label>
+                                <div class="col-sm-10">
+                                    <input type="number" class="form-control" id="number">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="inputPassword3" class="col-sm-2 col-form-label">PIN No.</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="inputPassword3">
+                                </div>
+                            </div>
+                            
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button class="btn btn-primary" type="button">Login</button>
+                            </div>
+                            <p>typrfg</p>
+                            <p>Type the text as shown in the above</p>
+                            <input type="text"  placeholder="enter captcha" name="" id="">
+                        </form>
+                            <!-- </center> -->
+                </div>
+            </li>
+
+
+            <li>
+                <a id="showlogin2">mPIN</a>
+                <div id="tohide2">
+                    <!-- <center> -->
+
+                        <form>
+                            <fieldset class="row mb-3">
+                                <legend class="col-form-label col-sm-2 pt-0"></legend>
+                                <div class="col-sm-10">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                      Customer ID:
+                                    </label>
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                      Mobile No:
+                                    </label>
+                                  </div>
+                                 
+                    
+                                   
+                                    <div class="col-md-12 col-md-4  label">
+                                        <label for="firstname" style="color: black; font-size: 16px;">Customer ID/ Mobile No </label>
+                                    </div> 
+                                    <div class="col-md-12 col-md-4  label" style="float: right;">
+                                        <input type="number" class="form-control" id="number">
+                                    </div> 
+                                    
+                                    <br/>
+                                    <div class="row mb-3">
+                                        <label for="inputPassword3" class="col-sm-2 col-form-label">PIN No.</label> 
+                                        <div class="col-sm-10">
+                                            <input type="password" class="form-control" id="inputPassword3">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-grid gap-2 col-6 mx-auto">
+                                        <button class="btn btn-primary" type="button">Login</button>
+                                    </div>
+                                    
+                                </form>
+                    <!-- </center> -->
+                </div>
+            </li>
+            <!-- <li><a>Debit Card No.</a></li> -->
+            <!-- <li><a>mPIN</a></li> -->
+
+        </ul>
+        <br>
+        <p><strong>Note:</strong> This example shows how to create a basic navigation tab. It is not toggleable/dynamic
+            yet (you can't click on the links to display different content)- see the last example in the Bootstrap Tabs
+            and Pills Tutorial to find out how this can be done.</p>
+            
+    </div> -->
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+

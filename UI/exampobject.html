@@ -1,0 +1,85 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    const person={id:"",fname:"",lname=""};
+    function submitData()
+    {
+person.id=document.getElementById('pid').value;
+person.fname=document.getElementById('firstname').value;
+
+//localStorage/sessionStorage
+localStorage.setItem("pid",person.id);
+localStorage.setItem("firstname",person.fname);
+alert("going to the person details page");
+
+    }
+    function showdata()
+    {
+        window.location.href="persondetails.html";
+//show data in the textboxes--- localstorage/sessionstorage
+
+    }
+</script>
+<body>
+    <form>
+        <label>Enter ID</label>
+        <input type="number" name="pid" id="pid"/>
+        <br/>
+        <label>Enter name</label>
+        <input type="text" name="firstname" id="firstname"/>
+        <br/>
+        <button onclick="submitData()">Submit</button>
+<button onclick="showdata()"></button>
+    </form>
+    
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ
+<script>
+    const abc={id:"0",fname:"xyz"};
+
+    function submitdata()
+    {
+        alert("submitcalled");
+        abc.id=document.getElementById("pid").value;
+        abc.fname=document.getElementById("fname").value;
+
+        console.log("User typed =" + abc.id);
+        console.log("Fname typed =" + abc.fname);
+
+        localStorage.setItem("pid",abc.id);
+        sessionStorage.setItem("p_id",abc.id);
+        localStorage.setItem("pname",abc.fname);
+        sessionStorage.setItem("p_name",abc.fname);
+    }
+    
+</script>
+
+</head>
+<body>
+    <form>
+        <label>enter id</label>
+        <input type="number" name="pid" id="pid"/>
+        <br/>
+        <label>enter name</label>
+        <input type="text" name="fname" id="fname"/>
+        <br/>
+        <input type="button" class="btn btn-primary" name="sub" value="Login/Submit" onclick="submitdata()"/>
+        <a href="personaldetails.html" target="_blank">Show</button>
+    </form>      
+</body>
+</html>
+

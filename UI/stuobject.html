@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="studentDetails"></p>
+    <p id="AllDetails"></p>
+    <script>
+        //properties,methods,functions,const,objects
+       let grade= 7;
+        //javascript object
+        const student={
+            fname:"Maria",
+            Rollno:123,
+            city:"bangalore",
+            sub1:"biology",
+            sub2:"chemistry",
+            fullDetails:function(){
+                return this.fname + this.Rollno + this.city + this.sub1 + this.sub2 + grade;
+            }
+        };
+
+      document.getElementById("studentDetails").innerHTML= student.fname + "" + student.Rollno + "" + student.city + "" + student.sub1 + "" + student.sub1 + "" +grade;
+        document.getElementById("AllDetails").innerHTML=student.fullDetails();
+    </script>
+</body>
+</html>

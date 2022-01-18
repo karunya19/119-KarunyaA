@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+$("#b1").click(function(){
+
+ 
+    var prodname=$("#pname").val();
+    if(prodname.length!=0){
+    $('ol').append("<li>" + prodname + "</li>");
+   }
+   else{
+
+    alert("blank input not allowed");
+   }
+});
+$("#b2").click(function(){
+   // $("ol").append("<li>Mobiles</li>");
+    var prodname=$("#pname").val();
+    $('ol').prepend("<li>" + prodname + "</li>");
+});
+$('#b3').click(function(){
+
+    var i="<p>This is a para</p>";//create para using html
+
+   
+    $('body').append('<p>This is a para</p>');
+    // $('body').append(i); 
+
+    var j=$("<p></p>").text("this is created using <b>jquery</b>");
+
+    var m=$("<p></p>").html("this is created using <b>jquery</b>");
+    // $('body').append(j); 
+
+    var k=document.createElement("p");
+    k.innerHTML="This para is created using docuemnt.createElement() ";
+    // $('body').append(k); 
+
+$('body').append(i,j,k,m); 
+
+    
+});
+
+});
+
+       
+    </script>
+
+<style>
+    body{
+        padding: 5px;
+        margin: 0px;
+    }
+    .para{
+        background-color: rgb(208, 221, 160);
+    }
+</style>
+</head>
+<body>
+<div style="background-color: rgb(255, 0, 34);width: auto;height: auto;">
+    <center>
+        <h1>Games</h1>
+    </center>
+</div>
+<h1>Introduction of Games</h1>
+<div class="para">
+<p id="intro"> Games is well known in the world and is known as game of world. The national game of India is Hockey.It is also called the King of games</p>
+<p>India is second largest game in the world, There are large variety of games in different geographical zones in India.</p>
+<p>In India, you can identify several seasonal games. Some of these games are readily available. Some are indoor and outdoor games.</p>
+</div>
+<hr/>
+<input type=text id="pname" />
+
+<ol><li>Hockey</li></ol>
+
+<label for="">Add After</label>
+<input type="radio" id="b1"value="Append Text">
+<label for="">Add Before</label>
+<input type="radio" id="b2"value="Prepend Text">
+
+</body>
+</html>

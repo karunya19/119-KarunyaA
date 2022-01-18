@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#tohide').hide();
+            // $('p').hide();
+            // $('#tohide1').hide();
+
+            $('#showlogin').click(function ()
+            {
+                $('#tohide').show();
+                $('#tohide').hide();
+            });
+            $('#tohide').hide();
+            // $('p').hide();
+            // $('#tohide1').hide();
+
+            $('#showlogin').click(function ()
+            {
+                $('#tohide').show();
+                $('#tohide').hide();
+            });
+
+        });
+
+
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h3>AXIS BANK | INTERNET BANKING</h3>
+        <br>
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="">WELCOME TO AXIS BANK</a></li>
+            <li>
+                <a id="showlogin">Login ID</a>
+                <div id="tohide">
+                    <center>
+
+                        <form>
+                            <div class="row mb-3">
+                                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="inputEmail3">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="inputPassword3">
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <button class="btn btn-primary" type="button">Login</button>
+                          </div>
+                    </center>
+                </div>
+            </li>
+
+
+
+            <li>
+                <a id="showlogin1">Debit Card No.</a>
+                <div id="tohide1">
+                    <center>
+
+                        <form>
+                            <div class="row mb-3">
+                                <label for="inputEmail3" class="col-sm-2 col-form-label">Caed No</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="inputEmail3">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="inputPassword3" class="col-sm-2 col-form-label">PIN No</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="inputPassword3">
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <button class="btn btn-primary" type="button">Login</button>
+                          </div>
+                    </center>
+                </div>
+            </li>
+            <!-- <li><a>Debit Card No.</a></li> -->
+            <!-- <li><a>mPIN</a></li> -->
+
+        </ul>
+        <br>
+        <p><strong>Note:</strong> This example shows how to create a basic navigation tab. It is not toggleable/dynamic
+            yet (you can't click on the links to display different content)- see the last example in the Bootstrap Tabs
+            and Pills Tutorial to find out how this can be done.</p>
+    </div>
+
+</body>
+
+</html>
